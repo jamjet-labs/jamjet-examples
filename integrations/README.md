@@ -9,8 +9,8 @@ that the framework alone doesn't provide.
 >
 > The first 10 merged integrations earn a JamJet T-shirt + sticker pack
 > (worldwide shipping). Plus a permanent author credit, social shoutout from
-> [@jamjet](https://twitter.com/jamjet), Discord `Integration Contributor`
-> role, and a 24-hour first response on your PR.
+> [@jamjet](https://twitter.com/jamjet), JamJet Discord `Integration
+> Contributor` role, and a 24-hour first response on your PR.
 
 ---
 
@@ -26,6 +26,8 @@ that the framework alone doesn't provide.
 | 6 | DSPy | Python | B | 🟢 Open | [Claim →](../../issues?q=is%3Aissue+is%3Aopen+label%3Aframework%2Fdspy) |
 | 7 | Spring AI | Java | B (extension) | 🟢 Open | [Claim →](../../issues?q=is%3Aissue+is%3Aopen+label%3Aframework%2Fspring-ai) |
 | 8 | LangChain4j | Java | B (extension) | 🟢 Open | [Claim →](../../issues?q=is%3Aissue+is%3Aopen+label%3Aframework%2Flangchain4j) |
+
+> Pattern variants: `(mcp-native)` = the framework already speaks MCP natively; `(extension)` = uses an existing JamJet binding for that ecosystem.
 
 ---
 
@@ -43,8 +45,8 @@ that the framework alone doesn't provide.
 6. **Get merged.** Receive your shoutout, Discord role, and (if you're in the
    first 10) a swag form link.
 
-**Slot expiry:** if no PR is opened within 14 days of claim, the slot returns
-to the pool. Reclaiming is allowed.
+> ⏱ **Slot expiry:** if no PR is opened within 14 days of claim, the slot
+> returns to the pool. Reclaiming is allowed.
 
 ---
 
@@ -64,18 +66,18 @@ without rewriting their code. Patterns A (JamJet wraps framework) and C
 | Reward | Detail |
 |--------|--------|
 | **Author credit** | Your `@handle` permanently in your integration's README. |
-| **Index entry** | Your `@handle` listed in this README's "Authors" section forever. |
+| **Index entry** | Your `@handle` listed permanently in the "Authors" section of this index. |
 | **Social shoutout** | [@jamjet](https://twitter.com/jamjet) posts on X + LinkedIn tagging you within 48h of merge. |
 | **Discord role** | `Integration Contributor` badge in the JamJet Discord. |
 | **Swag** | T-shirt + sticker pack mailed worldwide — first 10 merged contributors only. |
-| **Conference exposure** | Standout integrations may be demoed in upcoming JamJet talks at Devoxx, Spring I/O, etc. |
+| **Conference exposure** | Standout integrations selected for demos in upcoming JamJet conference talks (Devoxx, Spring I/O, and others). |
 | **Fast review** | Maintainer first response within 24h on every PR. |
 
 ---
 
 ## Authors
 
-(This list updates as PRs merge.)
+_This list updates as PRs merge._
 
 _No integrations merged yet — be the first._
 
@@ -86,7 +88,7 @@ _No integrations merged yet — be the first._
 ⭐ Star [JamJet](https://github.com/jamjet-labs/jamjet) — the runtime these
 integrations are built on.
 
-🚀 Run integrations in production with multi-tenant + dashboards →
+🚀 Run integrations in production with multi-tenancy + dashboards →
 [JamJet Cloud](https://app.jamjet.dev)
 
-💬 Ask questions in [Discord](https://discord.gg/gdx5hM5F) (#integrations channel).
+💬 Ask in the `#integrations` channel of [JamJet Discord](https://discord.gg/gdx5hM5F).

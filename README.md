@@ -29,6 +29,22 @@
 
 **Ready-to-run workflow examples for [JamJet](https://github.com/jamjet-labs/jamjet) — the agent-native runtime.**
 
+</div>
+
+---
+
+## 📡 New: [Community Integrations →](integrations/)
+
+Building the official integration for your favorite AI framework? Claim a
+slot — we have 8 open: LangChain, LlamaIndex, CrewAI, AutoGen, Pydantic-AI,
+DSPy, Spring AI, LangChain4j. **First 10 merged contributors get JamJet
+swag.** See [`integrations/README.md`](integrations/) and
+[`CONTRIBUTING-INTEGRATIONS.md`](CONTRIBUTING-INTEGRATIONS.md).
+
+---
+
+<div align="center">
+
 [![License](https://img.shields.io/badge/license-Apache%202.0-f5c518?style=flat-square)](../jamjet/LICENSE)
 
 [jamjet.dev](https://jamjet.dev) · [Docs](https://jamjet.dev/docs/quickstart) · [Examples Gallery](https://jamjet.dev/examples)

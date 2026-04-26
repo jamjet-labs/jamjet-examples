@@ -13,10 +13,10 @@
 > **REQUIRED.** Pick at least one of: durability, audit, HITL, policy, cost,
 > memory. Explain in 2-3 sentences how this integration uses it.
 
-This integration shows {{Framework}} agents using JamJet's `@durable_agent`
-decorator for crash recovery. If the process dies mid-tool-call, JamJet replays
-the agent from the last completed step on restart — without re-paying for
-prior LLM calls.
+This integration shows {{Framework}} agents wrapped in a JamJet `Workflow`,
+where each step is checkpointed via `@workflow.step`. If the process dies
+mid-step, JamJet replays from the last completed step on restart — completed
+LLM calls and tool calls are skipped, so you don't re-pay for them.
 
 ## How to Run
 
@@ -31,24 +31,29 @@ uv run python main.py
 Expected output:
 
 ```
-[1/3] Agent started, durable session id: abc123
-[2/3] Tool call: web_search → 4 results
-[3/3] Final answer: ...
+replace me
 ```
+
+(The template returns a placeholder string. Replace `run()` with your real
+{{Framework}} call to see the durable workflow in action.)
 
 ## See It In Action
 
 > **REQUIRED.** Insert a screenshot OR a terminal-output snippet here that
 > proves the JamJet capability works end-to-end.
+>
+> Once you've wired in a real {{Framework}} agent, demonstrate the durable
+> moment: kill the process mid-step and re-run; the workflow should resume
+> from the last checkpointed step.
 
 ```
 $ uv run python main.py &
-[1/3] Agent started, durable session id: abc123
-[2/3] Tool call: web_search → 4 results
-$ kill %1                            # crash mid-flight
-$ uv run python main.py --resume abc123
-[2/3] Resuming from checkpoint after web_search
-[3/3] Final answer: ...               # same answer, no re-billed LLM calls
+[step] start: query=...
+[step] {{Framework}} called: ...
+$ kill %1                              # crash mid-step
+$ uv run python main.py
+[step] resumed at: <checkpointed-step>  # skipped already-completed work
+[step] result: ...
 ```
 
 ## Built by

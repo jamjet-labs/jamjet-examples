@@ -4,7 +4,8 @@ version = "0.1.0"
 description = "{{Framework}} × JamJet integration example"
 requires-python = ">=3.11"
 dependencies = [
-    "jamjet>=0.3.1",
+    "jamjet>=0.6.0",
+    "pydantic>=2.0",
     # "{{framework}}>={{X.Y.Z}}",
     # "openai>=1.0.0",
 ]

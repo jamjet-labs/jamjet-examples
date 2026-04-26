@@ -14,8 +14,10 @@
 > memory. Explain in 2-3 sentences how this integration uses it.
 
 This integration shows {{Framework}} agents using JamJet's `@DurableAgent`
-annotation for crash recovery. The agent's tool-call sequence is event-sourced;
-on restart JamJet replays from the last completed step.
+class annotation paired with `@Checkpoint` methods. Each `@Checkpoint` step is
+recorded in the event log; on restart after a crash, JamJet replays completed
+steps as no-ops and resumes from the first incomplete one — completed LLM and
+tool calls are not re-issued.
 
 ## How to Run
 
@@ -30,24 +32,29 @@ mvn exec:java -Dexec.mainClass=Main
 Expected output:
 
 ```
-[1/3] Agent started, durable session id: abc123
-[2/3] Tool call: web_search → 4 results
-[3/3] Final answer: ...
+replace me
 ```
+
+(The template returns a placeholder string. Replace `run()` with your real
+{{Framework}} call to see the durable agent in action.)
 
 ## See It In Action
 
 > **REQUIRED.** Insert a screenshot OR a terminal-output snippet here that
 > proves the JamJet capability works end-to-end.
+>
+> Once you've wired in a real {{Framework}} agent, demonstrate the durable
+> moment: kill the process mid-`@Checkpoint` and re-run; the agent should
+> resume from the last completed checkpoint.
 
 ```
 $ mvn exec:java -Dexec.mainClass=Main &
-[1/3] Agent started, durable session id: abc123
-[2/3] Tool call: web_search → 4 results
-$ kill %1                                   # crash mid-flight
-$ mvn exec:java -Dexec.mainClass=Main -Dresume=abc123
-[2/3] Resuming from checkpoint after web_search
-[3/3] Final answer: ...                      # same answer
+[checkpoint] start: query=...
+[checkpoint] {{Framework}} called: ...
+$ kill %1                                # crash mid-step
+$ mvn exec:java -Dexec.mainClass=Main
+[checkpoint] resumed at: <last-completed>  # skipped already-completed work
+[checkpoint] result: ...
 ```
 
 ## Built by

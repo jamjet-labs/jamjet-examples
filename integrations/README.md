@@ -9,7 +9,7 @@ that the framework alone doesn't provide.
 >
 > The first 10 merged integrations earn a JamJet T-shirt + sticker pack
 > (worldwide shipping). Plus a permanent author credit, social shoutout from
-> [@jamjet](https://twitter.com/jamjet), JamJet Discord `Integration
+> [@jamjetdev](https://twitter.com/jamjetdev), JamJet Discord `Integration
 > Contributor` role, and a 24-hour first response on your PR.
 
 ---
@@ -67,7 +67,7 @@ without rewriting their code. Patterns A (JamJet wraps framework) and C
 |--------|--------|
 | **Author credit** | Your `@handle` permanently in your integration's README. |
 | **Index entry** | Your `@handle` listed permanently in the "Authors" section of this index. |
-| **Social shoutout** | [@jamjet](https://twitter.com/jamjet) posts on X + LinkedIn tagging you within 48h of merge. |
+| **Social shoutout** | [@jamjetdev](https://twitter.com/jamjetdev) posts on X + LinkedIn tagging you within 48h of merge. |
 | **Discord role** | `Integration Contributor` badge in the JamJet Discord. |
 | **Swag** | T-shirt + sticker pack mailed worldwide — first 10 merged contributors only. |
 | **Conference exposure** | Standout integrations selected for demos in upcoming JamJet conference talks (Devoxx, Spring I/O, and others). |

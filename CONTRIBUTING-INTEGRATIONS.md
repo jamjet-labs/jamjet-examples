@@ -93,7 +93,7 @@ Once your PR merges:
 2. **Index entry** added to `integrations/README.md` Authors section.
 3. **Discord role** — drop your Discord handle in the merge comment to get
    the `Integration Contributor` role (or join via [discord.gg/gdx5hM5F](https://discord.gg/gdx5hM5F)).
-4. **Social shoutout** — [@jamjet](https://twitter.com/jamjet) posts on X +
+4. **Social shoutout** — [@jamjetdev](https://twitter.com/jamjetdev) posts on X +
    LinkedIn within 48h.
 5. **Swag (first 10 only)** — maintainer drops a Google Form link in the
    merge comment for size + shipping. Printful ships in ~2 weeks.

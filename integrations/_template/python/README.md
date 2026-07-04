@@ -58,7 +58,7 @@ $ uv run python main.py
 
 ## Built by
 
-[@your-github-handle](https://github.com/your-github-handle) — first JamJet ×
+[(https://github.com/vinamradev) — first JamJet ×
 {{Framework}} integration.
 
 ---
